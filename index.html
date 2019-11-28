@@ -1,31 +1,82 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Welcome to out site</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script type="text/javascript" src="javascript.js"></script>
+        <title>Pizza</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="script.js"></script>
     </head>
-    <body onload="StartTimer();PrintTime()">
-        <div>
-            <p id="time"></p>
+
+    <body onload="CheckTheme()">
+            <div class="header">
+                    <div id="timer"></div>
+                    <div class="themeAnimate">
+                        <div class="themeSelector">
+                                <p id="pThemes">Themes</p>
+                                <div class="buttons">
+                                        <button onclick="SelectTheme(1);Animation()">Light</button>
+                                        <button onclick="SelectTheme(2)">Dark</button>
+                                        <button onclick="SelectTheme(3)">90's</button>
+                                </div>
+        
+                            </div>
+                </div>
+            <img src="loggo.png" width="183px" height="183px" alt="Image of logo">
+        </div>
+            <div class="menu">
+                            <div id="animate">
+                                <a href="index.html">Home</a><p id="menup"> | </p>
+                            </div>
+                <a href="pizzamenu.html">Menu</a><p id="menup"> | </p>
+                <a href="QA.html">Frågor</a><p id="menup"> | </p>
+                <a href="DIY.html">Gör det själv</a><p id="menup"> | </p>
+                <a href="contact.html">Fan Club</a>
+
+            </div>
+            <br><br>
+
+
+            <div class="row">
+            <div class="contentIndex">
+                    <p id="rubrik"><q><i><b>I Think of Dieting, then I eat pizza...</b></i></q></p><br>
+                    <p id="text">Är du också en person som uppskattar det goda i livet?
+                    På den här sidan finner du grundkonceptet till den klassiska pizzan med en mängd olika variationer.
+                    Nöjer du dig verkligen med en medioker pizza?
+                    Du kanske bara letar efter inspiration för att imponera på dina vänner eller enkela tillvägagångssätt för att skapa din egen.
+                    Vi har i brist på annat gjort det som du förmodligen inte orkar gör efter jobbet, den ultimata pizzan!
+                    Välkommen!
+                    </p><br>
+                    </div>
+                    <div class="contentIndex">
+                        <p id="rubrik"><i><b>Tomatsås och ost</b></i></p>
+                        <p id="text">Syre, vatten, energi och möjligtvis skinka.
+                            Grunden till hela vår existens ligger i naturen...</p><br>
+                            <button><a href="pizzamenu.html">Ultimata Pizza guiden</a></button><br><br>
+
+                        <p id="rubrik"><i><b>"Kan man ha frukt på Pizzan?"</b></i></p>
+                        <p id="text">Får man verkligen experimenter på det sättet?
+                            Vi svarar på de vanligaste frågorna och missförstånden
+                            när det gäller Pizzor</p><br>
+                            <button><a href="pizzamenu.html">Se alla frågor</a></button><br>
+                    </div>
+                </div>
+
+                    <div id="space"></div>
+
+                    <footer class="footer">
+                        <table style="width: 50%;">
+                            <tr>
+                                <th>Mediocre Pizzas inc.</th>
+                                <th>CTO</th>
+                                <th>CEO</th>
+                            </tr>
+                            <tr>
+                                <td>Sweden</td>
+                                <td>David</td>
+                                <td>Hilda</td>
+                            </tr>
+                        </table>
+                    </footer>
 
         </div>
-        <div>
-                <a href="pizza.html">Our pizzas</a>
-                <a href="recepies.html">Recepies</a>
-                <a href="other.html">Other stuff</a>
-        </div>
-        <div>
-            <form onsubmit="Test()">
-                <input type="text" id="form"><br>
-                <input type="submit">
-            </form>
-            Content
-
-        </div>
-        <footer>Footer
-            <p id="timer"></p>
-
-        </footer>
     </body>
 </html>
